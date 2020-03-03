@@ -1,0 +1,275 @@
+<div class="header pb-6">
+    <div class=" container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-lg-6 col-7">
+                    <h6 class="h2 text-dark d-inline-block mb-0">Lake</h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="fas fa-water text-dark"> </i> </a>
+                            </li>
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> Lake </a>
+                            </li>
+                
+                            <li aria-current="page" class=" breadcrumb-item active">
+                                Viewer
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+				<div 
+					class="leaflet-map" 
+					leaflet 
+					[leafletLayers]="markerLayer"
+					[leafletOptions]="leafletOptions">
+				</div>
+			</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+				<div class="card-header">
+                    <h4 class="m-0">Flora List</h4>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Type</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody class="list">
+                            <tr>
+                                <th scope="row">
+                                    <div class=" media align-items-center">
+                                        <a
+                                          class=" avatar rounded-circle mr-3"
+                                          href="javascript:void(0)"
+                                        >
+                                            <img
+                                                alt="Image placeholder"
+                                                src="assets/icon/flora.svg"
+                                            />
+                                        </a>
+                          
+                                        <div class=" media-body">
+                                            <span class=" name mb-0 text-sm">
+                                                Flora Type 1
+                                            </span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-info">139</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <div class=" media align-items-center">
+                                        <a
+                                          class=" avatar rounded-circle mr-3"
+                                          href="javascript:void(0)"
+                                        >
+                                            <img
+                                                alt="Image placeholder"
+                                                src="assets/icon/flora.svg"
+                                            />
+                                        </a>
+                          
+                                        <div class=" media-body">
+                                            <span class=" name mb-0 text-sm">
+                                                Flora Type 2
+                                            </span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-info">419</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <div class=" media align-items-center">
+                                        <a
+                                          class=" avatar rounded-circle mr-3"
+                                          href="javascript:void(0)"
+                                        >
+                                            <img
+                                                alt="Image placeholder"
+                                                src="assets/icon/flora.svg"
+                                            />
+                                        </a>
+                          
+                                        <div class=" media-body">
+                                            <span class=" name mb-0 text-sm">
+                                                Flora Type 3
+                                            </span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-info">239</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="javascript:void(0)" tabindex="-1">
+                                    <i class="fa fa-angle-left"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+                            <li class="page-item active"><a class="page-link" href="javascript:void(0)">2</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:void(0)">
+                                    <i class="fa fa-angle-right"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+			</div>
+        </div>
+        <div class="col">
+            <div class="card">
+				<div class="card-header">
+                    <h4 class="m-0">Flora List</h4>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Type</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody class="list">
+                            <tr>
+                                <th scope="row">
+                                    <div class=" media align-items-center">
+                                        <a
+                                          class=" avatar rounded-circle mr-3"
+                                          href="javascript:void(0)"
+                                        >
+                                            <img
+                                                alt="Image placeholder"
+                                                src="assets/icon/fauna.svg"
+                                            />
+                                        </a>
+                          
+                                        <div class=" media-body">
+                                            <span class=" name mb-0 text-sm">
+                                                Fauna Type 1
+                                            </span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-warning">121</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <div class=" media align-items-center">
+                                        <a
+                                          class=" avatar rounded-circle mr-3"
+                                          href="javascript:void(0)"
+                                        >
+                                            <img
+                                                alt="Image placeholder"
+                                                src="assets/icon/fauna.svg"
+                                            />
+                                        </a>
+                          
+                                        <div class=" media-body">
+                                            <span class=" name mb-0 text-sm">
+                                                Fauna Type 2
+                                            </span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-warning">133</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <div class=" media align-items-center">
+                                        <a
+                                          class=" avatar rounded-circle mr-3"
+                                          href="javascript:void(0)"
+                                        >
+                                            <img
+                                                alt="Image placeholder"
+                                                src="assets/icon/fauna.svg"
+                                            />
+                                        </a>
+                          
+                                        <div class=" media-body">
+                                            <span class=" name mb-0 text-sm">
+                                                Fauna Type 3
+                                            </span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-warning">212</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="javascript:void(0)" tabindex="-1">
+                                    <i class="fa fa-angle-left"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+                            <li class="page-item active"><a class="page-link" href="javascript:void(0)">2</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:void(0)">
+                                    <i class="fa fa-angle-right"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+			</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+			<div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Flora vs Fauna Statistics</h4>
+                </div>
+				<div class="card-body">
+					<div id="chartdiv" style="width: 100%; height: 500px"></div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
